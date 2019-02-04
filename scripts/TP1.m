@@ -96,4 +96,25 @@ title('Thresh []')
 % charges ct.mat (a)
 clear all;
 data_folder_path = '../data/';
-img = load(strcat(data_folder_path, 'ct.mat'));
+load(strcat(data_folder_path, 'ct.mat'));
+figure
+subplot(2,2,1)
+imshow(img, [])
+title('[]')
+
+% afficher pour differents valeurs de seuillage
+thresh1 = [0,1];
+subplot(2,2,2)
+imshow(img, thresh1)
+title('Thresh [0, 1]')
+
+thresh2 = [-150,250];
+subplot(2,2,3)
+imshow(img, thresh2)
+title('Thresh [0,100]')
+
+thresh3 = [-1400,200];
+subplot(2,2,4)
+imshow(img, thresh3)
+title('Thresh [100,255]')
+
