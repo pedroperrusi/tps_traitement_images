@@ -135,7 +135,9 @@ Se sont des metriques de similarite 4x et 8x utilisees pour le recalage.
 
 ### Question 25 : est-ce que les paramètres de rotation, translation et homothétie décrivent complètement une transformation affine ? Pourquoi ?
 
-Bonne question.
+DOF(Affine transform) = DOF(rotation) + DOF(translation) + DOF(scalling) + DOF(shear) = 12
+
+On manque encore 3 degrees of freedom of the [sheer mappping](https://en.wikipedia.org/wiki/Shear_mapping).
 
 ### Question 26 : expliquez pourquoi toutes les différences n'ont pas été compensées par le recalage
 
